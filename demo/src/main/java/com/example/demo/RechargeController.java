@@ -17,11 +17,6 @@ public class RechargeController {
 
         @GetMapping
         public String show(Model model){
-            List<plan> mylist= Arrays.asList(
-                    new plan(1,"plan a"),
-                    new plan(2,"plan b")
-            );
-            model.addAttribute("plan",mylist );
             return "recharge";
         }
 }
